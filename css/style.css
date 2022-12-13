@@ -71,7 +71,7 @@ padding: 100px;
     cursor: pointer;
 }
 
-.toggle .active{
+.toggle.active{
     background: var(--primary-color) url(../images/close.png);
     background-size: 25px;
     background-position: center;
@@ -84,6 +84,7 @@ padding: 100px;
     top: 0;
     left: 100%;
     width: 100%;
+    height: 100%;
     background-color: #fff;
     z-index: 15;
     display: flex;
@@ -121,10 +122,21 @@ left: 0;
     top: 0;
     left: 0;
     width: 60px;
-    height: 100px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.navigation .social-bar a{
+    display: inline-block;
+    transform: scale(0.5);
+}
+
+.navigation .email-icon{
+    position: absolute;
+    bottom: 20px;
+    transform: scale(0.5);
 }
 
 /* HOMEPAGE */
